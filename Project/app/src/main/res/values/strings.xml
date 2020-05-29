@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Week 6 Prove</string>
+    <string name="forecast_button">Forecast</string>
+    <string name="city_name">City Name</string>
+    <string name="temp_button">Temp</string>
 </resources>

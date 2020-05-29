@@ -11,20 +11,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="@string/city_name"
         android:inputType="textPersonName"
-        android:text="City Name"
         app:layout_constraintBottom_toBottomOf="@+id/_dynamic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.226"
+        android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/Temperature Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="getTemperature"
-        android:text="Temp"
+        android:text="@string/temp_button"
         app:layout_constraintBaseline_toBaselineOf="@+id/Forcast Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
@@ -34,7 +34,7 @@
         android:id="@+id/Forcast Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forecast"
+        android:text="@string/forecast_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.769"
