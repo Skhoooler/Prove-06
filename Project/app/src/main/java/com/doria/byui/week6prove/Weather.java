@@ -23,6 +23,7 @@ public class Weather implements Runnable {
 
         System.out.println("Getting the temperature for " + cityName);
         assert data != null;
-        System.out.println("Weather Data: " + data.getMeasurements());
+        System.out.print("Weather Data: ");
+        data.display();
     }
 }
