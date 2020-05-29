@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    void getTemperature(View view){
+    public void getTemperature(View view){
         Weather weather = new Weather("Twentynine Palms");
 
         Thread getTemperatureThread = new Thread(weather);
