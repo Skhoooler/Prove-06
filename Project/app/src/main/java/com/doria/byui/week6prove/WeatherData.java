@@ -14,6 +14,7 @@ public class WeatherData {
     public void display(){
         System.out.println(measurements.get("temp"));
     }
+
     public String getId() {
         return id;
     }
