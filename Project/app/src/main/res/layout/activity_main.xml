@@ -6,32 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/city_name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/_dynamic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226"
-        android:importantForAutofill="no" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="getTemperature"
         android:text="@string/temp_button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Forcast Button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/forecast_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/Forcast Button"
+        android:id="@+id/forecast_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forecast_button"
@@ -50,5 +36,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/city_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
