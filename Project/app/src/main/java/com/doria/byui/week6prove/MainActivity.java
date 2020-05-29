@@ -3,6 +3,7 @@ package com.doria.byui.week6prove;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,10 +11,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getTemperature();
     }
 
-    void getTemperature(){
+    void getTemperature(View view){
         Weather weather = new Weather("Twentynine Palms");
 
         Thread getTemperatureThread = new Thread(weather);
