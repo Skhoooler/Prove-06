@@ -11,6 +11,9 @@ public class WeatherData {
     @SerializedName("main")
     private Map<String, Float> measurements;
 
+    public void display(){
+        System.out.println(measurements.get("Temp"));
+    }
     public String getId() {
         return id;
     }
