@@ -33,9 +33,8 @@ public class WeatherDataLoader {
         String results = getWeatherJSON();
 
         Gson gson = new Gson();
-        WeatherData data = gson.fromJson(results, WeatherData.class);
 
-        return data;
+        return gson.fromJson(results, WeatherData.class);
     }
 
 
