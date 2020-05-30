@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getTemperature(View view){
-        String city = getResources().getString(R.string.city_name);
+        EditText mEdit;
+        mEdit = (EditText)findViewById(R.id.city_name);
+        String city = mEdit.getText().toString();
+
+        System.out.println(city);
         Weather weather = new Weather(city);
 
         Thread getTemperatureThread = new Thread(weather);
