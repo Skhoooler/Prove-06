@@ -14,7 +14,7 @@ public class Weather implements Runnable {
         String city = "Rexburg";
         WeatherDataLoader dataLoader = new WeatherDataLoader(city);
 
-        WeatherData data = null;
+        WeatherData data = new WeatherData();// = null;
         try {
             data = dataLoader.getWeatherData();
         } catch (IOException e) {
