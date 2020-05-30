@@ -11,8 +11,8 @@ public class Weather implements Runnable {
 
     @Override
     public void run() {
-        String city = "Rexburg";
-        WeatherDataLoader dataLoader = new WeatherDataLoader(city);
+
+        WeatherDataLoader dataLoader = new WeatherDataLoader(cityName);
 
         WeatherData data = null;
         try {

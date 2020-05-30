@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getTemperature(View view){
-        R.id.
-        Weather weather = new Weather("Twentynine Palms");
+        String city = getResources().getString(R.string.city_name);
+        Weather weather = new Weather(city);
 
         Thread getTemperatureThread = new Thread(weather);
         getTemperatureThread.start();
