@@ -25,5 +25,6 @@ public class Weather implements Runnable {
         assert data != null;
         System.out.print("Weather Data: ");
         data.display();
+
     }
 }
