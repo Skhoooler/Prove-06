@@ -14,6 +14,7 @@ public class WeatherData {
     public String display(){
         return measurements.get("temp").toString();
     }
+
     public String getId() {
         return id;
     }
