@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 public class WeatherDataLoader {
     private static final String apiKey = "f55c210efa37a59bcecf2e5e57c98ef9";
     private static final String WeatherURLpt1 = "https://api.openweathermap.org/data/2.5/weather?q=";
-    private static final String WeatherURLpt2 = "Rexburg&apiKey=";
+    private static final String WeatherURLpt2 = "&apiKey=";
     private              String cityName;
 
     WeatherDataLoader(String passedInCityName){
@@ -31,6 +31,7 @@ public class WeatherDataLoader {
      */
     public WeatherData getWeatherData() throws IOException {
         String results = getWeatherJSON();
+        System.out.println(results);
 
         Gson gson = new Gson();
 
