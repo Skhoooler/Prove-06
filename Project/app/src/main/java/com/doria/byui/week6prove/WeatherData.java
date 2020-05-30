@@ -12,7 +12,7 @@ public class WeatherData {
     private Map<String, Float> measurements;
 
     public void display(){
-        System.out.println(measurements.get("Temp"));
+        System.out.println(measurements.get("temp"));
     }
     public String getId() {
         return id;
